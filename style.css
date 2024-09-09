@@ -59,6 +59,7 @@ li{
     border-radius: 1vw;
     font-size: 2vw;
     justify-content: center;
+    margin: auto;
 }
 
 @media screen and (max-width:460px ) {
