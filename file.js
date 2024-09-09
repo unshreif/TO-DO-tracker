@@ -34,7 +34,20 @@ function show(){
         let li = document.createElement("li");
         li.innerHTML = task;
         list.appendChild(li);
+
+        document.getElementById("litag").addEventListener("dblclick", function(){
+            li.remove();
+            let index = tasks.indexOf(li.innerHTML);
+            tasks.splice(index, 1);
+            localStorage.setItem("tasks", JSON.stringify(tasks));
+        });
+
+        document.getElementById("litag").addEventListener("click", function(){
+            document.getElementById("litag").style.textDecoration = "line-through";
+        });
     });
+
+    
 }
 show();
 
