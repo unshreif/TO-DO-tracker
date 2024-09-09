@@ -58,7 +58,9 @@ li{
     margin: 1vw;
     border-radius: 1vw;
     font-size: 2vw;
+    width:  50vw;
     justify-content: center;
+    align-items: center;
     margin: auto;
 }
 
